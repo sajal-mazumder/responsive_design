@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 300px);
+    gap: 20px;
+}
+.cards{
+
+}
+.cards img{
+    width: 100%;
+    height: 100%;
+}
