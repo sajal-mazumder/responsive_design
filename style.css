@@ -31,3 +31,59 @@
     grid-column: span 1;
     grid-row: span 1;
 }
+
+/* @media screen and (max-width: 576px) {
+    .card_big, 
+    .card_normal, 
+    .card_small, 
+    .card_smaller{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+} */
+
+@media screen and (max-width:576px) {
+    .container{
+        display: block;
+    }
+}
+
+/* grid html */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px) 50px 50px;
+    gap: 20px;
+}
+.box1{
+    background-color: rgb(232, 171, 171);
+    padding: 20px;
+}
+.boxes{
+    background-color: gray;
+    padding: 20px;
+}
+#left_sideBar{
+    grid-row: span 5;
+}
+.footer{
+    background-color: aquamarine;
+    padding: 20px;
+    grid-column: span 3;
+}
+
+@media screen and (max-width: 576px) {
+    #left_sideBar{
+        grid-column: span 4;
+        grid-row: span 1;
+    }
+    .boxes{
+        grid-column: span 4;
+        grid-row: span 1;
+    }
+    .footer{
+        grid-column: span 4;
+        grid-row: span 1;
+    }
+}
